@@ -1,6 +1,6 @@
 # Change Environment Variables in windows from commandline
 
-## This is local only, call this from your other batch file to temporarily change the environment variables end get some usage out of it.
+## This is local only, call this from your other batch file to temporarily change the environment variables and get some usage out of it.
 
 ## Recommended usage (Windows only!):
  - store the bat file in your scripts folder
