@@ -1,3 +1,6 @@
 visualizeSavings/build/
 visualizeSavings/.gradle
 visualizeSavings/src/main/groovy/.gradle
+grokreport/build/
+grokreport/.gradle
+grokreport/src/main/groovy/.gradle
