@@ -23,16 +23,16 @@ void getSearchResult(grokLink, fullSearch, projects){
 }
 
 print "what is the grok link? "
-def grokLink = System.in.newReader().readLine()
+def grokLink = (this.args.size()<1) ? System.in.newReader().readLine() : this.args[0]
 
 print "what projects (, separated) do you want to look into? "
-List<String> projectsList = System.in.newReader().readLine().split(',')
+List<String> projectsList = (this.args.size()<2) ? System.in.newReader().readLine().split(',') : this.args[1].split(',')
 String projects = projectsList[0]
 for (int i=1;i<projectsList.size();i++){
     projects+="&projects=${projectsList[i]}"
 }
 
 print "what are you searching for? "
-def fullSearch = System.in.newReader().readLine()
+def fullSearch = (this.args.size()<3) ? System.in.newReader().readLine() : this.args[2]
 
 getSearchResult(grokLink, fullSearch, projects)
